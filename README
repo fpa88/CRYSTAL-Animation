@@ -1,0 +1,24 @@
+# CRYSTAL-Animation
+
+
+## How to insert animated gif in a beamer presentation ?
+
+To compile the latex code :
+
+pdflatex test.tex
+
+
+
+
+To open it under Linux with okular pdf viewer, you need to use the latest version :
+
+flatpak run org.kde.okular test.pdf
+
+
+
+## How to use tikz to insert an image at a given position in a latex document ?
+
+pdflatex montage_5x1_tikz_NMA_CsVF3.tex
+
+You can use any pdf viewer.
+

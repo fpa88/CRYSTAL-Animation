@@ -1,0 +1,57 @@
+\documentclass{standalone}
+\usepackage{geometry}
+\usepackage{animate}
+%\geometry{legalpaper, portrait, margin=1cm}
+\geometry{
+   %a4paper,
+    total={297mm,210mm},
+    left=25mm,
+    top=26mm,
+    %   bottom=30mm,
+    landscape}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usetikzlibrary{arrows.meta,bending}
+\usepackage{amssymb} % for harpoons
+\newcommand*\up{\fbox{$\mathord\upharpoonleft\phantom{\downharpoonright}$}}%
+\newcommand*\dwn{\fbox{$\mathord\downharpoonleft\phantom{\upharpoonright}$}}%
+\newcommand*\updwn{\fbox{$\upharpoonleft\downharpoonright$}}%
+\newcommand*\emp{\fbox{$\phantom{\downharpoonright}\phantom{\downharpoonright}$}}%
+\newcommand{\electron}[2]{{%
+        \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+%       \setlength\fboxrule{0.2pt}% uncomment for original line width
+        \begin{tabular}{c}
+            \fboxsep=0pt\fbox{\fboxsep=3pt#2}\\[2pt]
+            #1
+        \end{tabular}%
+}}
+
+\begin{document}
+
+\begin{tikzpicture}[ node distance=0.0cm,>=latex]
+\Large
+%\node[below] at (-5,4) {F1u -228 cm$^{-1}$};
+%\node [anchor=east,inner sep=0] (image1) at (0,0)
+%       {\includegraphics[trim=450 150 100 140,clip,width=10cm]{XYZFILES/csvf3_b3_fm_spg221_base11_IRRAM_kp_R_000_mode_0_F1u_-228.18_viewXY-0004.png}};
+
+\node[below] at ( 5,4) {F1u 128 cm$^{-1}$};
+\node [anchor=east,inner sep=0] (image2) at (10,0)
+       {\includegraphics[trim=450 150 100 140,clip,width=10cm]{XYZFILES/csvf3_b3_fm_spg221_base11_IRRAM_kp_R_000_mode_4_F1u_127.86_viewXY-0004.png}};
+
+\node[below] at (15,4) {F2u 212 cm$^{-1}$};
+\node [anchor=east,inner sep=0] (image3) at (20,0)
+       {\includegraphics[trim=450 150 100 140,clip,width=10cm]{XYZFILES/csvf3_b3_fm_spg221_base11_IRRAM_kp_R_000_mode_8_F2u_212.42_viewXY-0004.png}};
+
+\node[below] at (25,4) {F1u 262 cm$^{-1}$};
+\node [anchor=east,inner sep=0] (image4) at (30,0)
+       {\includegraphics[trim=450 150 100 140,clip,width=10cm]{XYZFILES/csvf3_b3_fm_spg221_base11_IRRAM_kp_R_000_mode_9_F1u_261.74_viewXY-0004.png}};
+
+\node[below] at (35,4) {F1u 362 cm$^{-1}$};
+\node [anchor=east,inner sep=0] (image5) at (40,0)
+       {\includegraphics[trim=450 150 100 140,clip,width=10cm]{XYZFILES/csvf3_b3_fm_spg221_base11_IRRAM_kp_R_000_mode_13_F1u_361.62_viewXY-0004.png}};
+
+\end{tikzpicture}
+
+
+
+\end{document}
